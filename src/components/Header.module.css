@@ -1,0 +1,9 @@
+.header {
+  grid-area: h;
+  background-color: burlywood;
+}
+
+.logo {
+  padding: 15px 0 0 50px;
+  height: 40px;
+}

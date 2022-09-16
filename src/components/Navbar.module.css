@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  grid-area: n;
+  background-color: palegoldenrod;
+}
+
+.link {
+  color: black;
+  margin: 10px;
+}
+
+.link:hover {
+  color: indigo;
+}
+
+.link:last-child {
+  margin: 35px 10px;
+}

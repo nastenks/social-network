@@ -7,11 +7,15 @@
 
 .link {
   color: black;
-  margin: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .link:hover {
   color: indigo;
+  background-color: rgba(250, 235, 215, 0.956);
+  border-radius: 8px;
 }
 
 .link:last-child {

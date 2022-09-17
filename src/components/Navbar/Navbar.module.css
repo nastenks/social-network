@@ -10,14 +10,27 @@
   color: black;
   cursor: pointer;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .link:hover {
   color: indigo;
-  background-color: rgba(250, 235, 215, 0.956);
+  background-color: rgba(250, 235, 215, 0.556);
   border-radius: 8px;
 }
 
 .link:last-child {
+  margin-top: 35px;
+}
+
+.active {
+  background-color: rgb(250, 235, 215);
+  border-radius: 8px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.active:last-child {
   margin-top: 35px;
 }

@@ -10,3 +10,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.content {
+  grid-area: c;
+}

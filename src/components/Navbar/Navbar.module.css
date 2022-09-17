@@ -3,11 +3,11 @@
   flex-direction: column;
   grid-area: n;
   background-color: palegoldenrod;
+  padding: 20px;
 }
 
 .link {
   color: black;
-  margin: 0 10px;
   cursor: pointer;
   padding: 10px;
 }
@@ -19,5 +19,5 @@
 }
 
 .link:last-child {
-  margin: 35px 10px;
+  margin-top: 35px;
 }

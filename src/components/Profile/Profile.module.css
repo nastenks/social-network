@@ -1,12 +1,5 @@
-.content {
-  grid-area: c;
-  background-color: olive;
+.wrap {
+  background-color: rgba(192, 192, 192, 0.486);
   display: flex;
   flex-direction: column;
-}
-
-.content img {
-  width: 98%;
-  margin: 0 auto;
-  height: 150px;
 }

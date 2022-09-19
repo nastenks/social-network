@@ -2,10 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Navbar.module.css"
 
-const Navbar = () => {
+const Navbar = (props) => {
   return(
     <nav className={s.nav}> 
       <NavLink 
+        exact
         className={ navData => navData.isActive ? s.active : s.link} 
         to="/profile"
       >

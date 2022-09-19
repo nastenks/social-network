@@ -4,6 +4,7 @@
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .post:last-child {
@@ -14,4 +15,9 @@
   height: 50px;
   width: 50px;
   margin-right: 20px;
+}
+
+.like {
+  width: 100%;
+  text-align: right;
 }

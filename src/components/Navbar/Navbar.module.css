@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   grid-area: n;
-  background-color: palegoldenrod;
+  background-color: #d5d4d0;
   padding: 20px;
 }
 
@@ -15,7 +15,7 @@
 
 .link:hover {
   color: indigo;
-  background-color: rgba(250, 235, 215, 0.556);
+  background-color: #bfb6a957;
   border-radius: 8px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .active {
-  background-color: rgb(250, 235, 215);
+  background-color: #bbad9b;
   border-radius: 8px;
   color: black;
   padding: 10px;

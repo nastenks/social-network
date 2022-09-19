@@ -11,12 +11,13 @@ const MyPosts = () => {
     { id: 3, message: "kuku", likeCounts: 2, urlImg: "https://weblinks.ru/wp-content/uploads/2022/02/Krasivye-kartinki-leta-na-zastavku-telefona-1.jpg"}
   ]
 
+  let postElement = postData
+    .map( p => <Post id={p.id} message={p.message} urlImg={p.urlImg} likeCounts={p.likeCounts} /> )
+
   return(
     <div className={s.my_posts}>
       <NewPost />
-      <Post id={postData[0].id} message={postData[0].message} urlImg={postData[0].urlImg} likeCounts={postData[0].likeCounts} />
-      <Post id={postData[1].id} message={postData[1].message} urlImg={postData[1].urlImg} likeCounts={postData[1].likeCounts} />
-      <Post id={postData[2].id} message={postData[2].message} urlImg={postData[2].urlImg} likeCounts={postData[2].likeCounts} />
+      {postElement}
     </div>
   );
 }

@@ -23,8 +23,6 @@ const NavbarFriends = (props) => {
       </div>
     </div>
   )
-  
-
 }
 
 export default NavbarFriends; 

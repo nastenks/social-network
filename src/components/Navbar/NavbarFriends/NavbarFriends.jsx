@@ -5,10 +5,14 @@ import { NavLink } from 'react-router-dom';
 const NavbarFriends = (props) => {
 
   let friendsElement = props.friendsData
-    .map ( f => <div className={s.avatar}>
+    .map ( f => 
+    <NavLink 
+      className={s.avatar} 
+      to={"/profile/" + f.id}
+    >
       <img src={f.img} />
       {f.name}
-    </div> )
+    </NavLink>)
 
   return (
     <div className={s.navbarFriends}>
@@ -26,3 +30,5 @@ const NavbarFriends = (props) => {
 }
 
 export default NavbarFriends; 
+
+      

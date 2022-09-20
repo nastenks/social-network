@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.link:hover {
+  color: indigo;
+  background-color: #bfb6a957;
+  border-radius: 8px;
+}
+
+.link:last-child {
+  margin: 35px 0;
+}
+
+.active {
+  background-color: #bbad9b;
+  border-radius: 8px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.active:last-child {
+  margin: 35px 0;
+}

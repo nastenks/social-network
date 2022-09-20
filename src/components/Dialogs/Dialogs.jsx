@@ -6,23 +6,11 @@ import s from "./Dialogs.module.css";
 
 const Dialogs = (props) => {
 
-  let dialogsData = [
-    {id: 1, name: 'Dima'},
-    {id: 2, name: 'Nastya'},
-    {id: 3, name: 'Kseniya'}
-  ]
+  let dialogsElement = props.dialogsData
+    .map( dialog => <DialogItem key={dialog.id} id={dialog.id} name={dialog.name} img={dialog.img} /> )
 
-  let dialogsElement = dialogsData
-    .map( dialog => <DialogItem id={dialog.id} name={dialog.name} /> )
-
-  let messageData = [
-    {id: 1, message: 'hi'},
-    {id: 2, message: 'hihu'},
-    {id: 3, message: 'how are you?'}
-  ]
-
-  let messageElement = messageData
-    .map ( message => <Message id={message.id} message={message.message} /> )
+  let messageElement = props.messageData
+    .map ( message => <Message key={message.id} id={message.id} message={message.message} /> )
 
   return (
     <div className={s.dialogs}>

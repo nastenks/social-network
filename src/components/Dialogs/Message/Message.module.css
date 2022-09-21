@@ -1,0 +1,12 @@
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.messageAvatar img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+}

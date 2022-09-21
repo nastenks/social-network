@@ -1,0 +1,14 @@
+.newMessage {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}

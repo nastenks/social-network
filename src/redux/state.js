@@ -1,3 +1,5 @@
+import rerenderEntireTree from "../render";
+
 let state = {
   profilePage: {
     postData: [
@@ -26,5 +28,17 @@ let state = {
     ]
   }
 }
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 5,
+    message: postMessage,
+    likeCounts: 0,
+    urlImg: "https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg"
+  }
+  state.profilePage.postData.push(newPost);
+  rerenderEntireTree(); // перерисовываем приложение после добавления данных
+}
+
 
 export default state;

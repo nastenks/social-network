@@ -3,3 +3,8 @@
   flex-direction: column;
   padding: 20px;
 }
+
+.listPosts {
+  display: flex;
+  flex-direction: column-reverse;
+}

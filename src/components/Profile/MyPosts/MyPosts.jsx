@@ -10,8 +10,10 @@ const MyPosts = (props) => {
 
   return(
     <div className={s.my_posts}>
-      <NewPost />
-      {postElement}
+      <NewPost addPost={props.addPost} />
+      <div className={s.listPosts}>
+        {postElement}
+      </div>
     </div>
   );
 }

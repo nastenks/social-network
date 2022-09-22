@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.post:last-child {
+.post:first-child {
   margin-bottom: 0;
 }
 

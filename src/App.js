@@ -14,8 +14,22 @@ const App = (props) => {
         <Navbar friendsData={props.friendsData} />
         <div className="content">
           <Routes>
-            <Route path="/profile" element={<Profile postData={props.postData} />} />
-            <Route path="/dialogs" element={<Dialogs dialogsData={props.dialogsData} messageData={props.messageData} />} />
+            <Route 
+              path="/profile" 
+              element=
+                {<Profile 
+                  postData={props.postData}
+                  addPost={props.addPost}  
+                />} 
+            />
+            <Route 
+              path="/dialogs" 
+              element=
+                {<Dialogs 
+                  dialogsData={props.dialogsData} 
+                  messageData={props.messageData} 
+                />} 
+            />
           </Routes>
         </div>
       </div>

@@ -2,12 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {addPost} from './redux/state';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
+import {addPost, updateNewPostText} from './redux/state';
 
 let rerenderEntireTree = (state) => {
+  const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <App 
@@ -16,6 +14,8 @@ let rerenderEntireTree = (state) => {
         postData={state.profilePage.postData} 
         friendsData={state.navbarData.friendsData} 
         addPost={addPost}
+        NewPostText={state.profilePage.NewPostText}
+        updateNewPostText={updateNewPostText}
       />
     </React.StrictMode>
   );

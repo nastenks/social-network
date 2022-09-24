@@ -20,6 +20,8 @@ const App = (props) => {
                 {<Profile 
                   postData={props.postData}
                   addPost={props.addPost}  
+                  NewPostText={props.NewPostText}
+                  updateNewPostText={props.updateNewPostText}
                 />} 
             />
             <Route 

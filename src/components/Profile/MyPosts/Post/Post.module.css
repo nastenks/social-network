@@ -19,5 +19,7 @@
 
 .like {
   width: 100%;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }

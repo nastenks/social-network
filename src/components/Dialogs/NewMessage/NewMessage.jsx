@@ -7,7 +7,6 @@ const NewMessage = () => {
   
   let sendMessage = () => {
     let text = textMessage.current.value
-    alert (text)
   }
 
   return(

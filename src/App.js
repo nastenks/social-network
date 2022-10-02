@@ -30,6 +30,8 @@ const App = (props) => {
                 {<Dialogs 
                   dialogsData={props.dialogsData} 
                   messageData={props.messageData} 
+                  addMessage={props.addMessage}
+                  updateNewMessageText={props.updateNewMessageText}
                 />} 
             />
           </Routes>
